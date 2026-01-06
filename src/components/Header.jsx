@@ -6,7 +6,7 @@ export default function Header({ mode, setMode, lastUpdated, theme, setTheme }) 
       <div style={styles.left}>
         <div style={styles.brand}>
           <span style={styles.logo}>🏏</span>
-          <h2 style={styles.title}>Cricket Live</h2>
+          <h2 style={styles.title}>Cricket Live Score And Analytics</h2>
         </div>
         {lastUpdated && (
           <div style={styles.statusRow}>
