@@ -7,6 +7,8 @@ export default defineConfig({
     react({
       babel: {
         plugins: [['babel-plugin-react-compiler']],
+          base: '/cricket-live-dashboard-and-analytics/',
+
       },
     }),
   ],
