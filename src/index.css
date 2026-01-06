@@ -1,0 +1,63 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* REMOVE SCROLLBAR */
+html, body {
+  overflow-x: hidden;
+  -ms-overflow-style: none !important;  /* IE and Edge */
+  scrollbar-width: none !important;     /* Firefox */
+}
+
+html::-webkit-scrollbar, 
+body::-webkit-scrollbar {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+/* THEME VARIABLES */
+:root {
+  --bg: #f6f7f9;
+  --card: #ffffff;
+  --text: #111827;
+  --muted: #6b7280;
+  --border: #e5e7eb;
+  --primary: #2563eb;
+  --success-bg: #e7f5ee;
+  --success-text: #166534;
+}
+
+[data-theme="dark"] {
+  --bg: #0f172a;
+  --card: #020617;
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+  --border: transparent;   /* ❗ removes white borders */
+  --primary: #60a5fa;
+  --success-bg: #052e1a;
+  --success-text: #86efac;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+/* Create a utility class */
+.hide-scrollbar {
+  /* IE and Edge */
+  -ms-overflow-style: none !important;
+  /* Firefox */
+  scrollbar-width: none !important;
+}
+
+/* Chrome, Safari and Opera */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}
